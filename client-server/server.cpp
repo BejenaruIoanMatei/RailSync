@@ -1408,7 +1408,7 @@ int main(int argc, char *argv[])
     serverAddr.sin_addr.s_addr = htonl(INADDR_ANY);
     serverAddr.sin_port = htons(PORT);
 
-    if (bind(socketfd, (sockaddr *)&serverAddr, sizeof(sockaddr)) < 0)
+    if (::bind(socketfd, (sockaddr *)&serverAddr, sizeof(sockaddr)) < 0)
     {
         perror("[server]Eroare la bind().\n");
         exit(1);

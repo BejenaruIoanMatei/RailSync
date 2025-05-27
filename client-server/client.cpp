@@ -154,7 +154,9 @@ int main(int argc, char *argv[])
         exit(1);
     }
 
-    std::thread citireBDThread(citesteBazaDate, clientiDB);
+    std::thread citireBDThread([&]() {
+        citesteBazaDate(clientiDB);
+    });
 
     int contor_main = 0;
 

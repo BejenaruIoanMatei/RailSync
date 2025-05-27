@@ -1,0 +1,6 @@
+# Ignore Executables
+client-server/server
+client-server/client
+
+# Ignore db files
+*.db
