@@ -1,20 +1,29 @@
 # RailSync
 
-## Despre Proiect
-RailSync este o aplicație server care oferă clienților înregistrați informații în timp real despre:
+## About the Project
 
-- 🚆 Mersul trenurilor – orare actualizate pentru toate trenurile disponibile
-- 🚉 Status plecări și sosiri – notificări în timp real pentru plecările și sosirile din stații
-- ⏳ Întârzieri – raportarea și actualizarea întârzierilor în timp real
-- 🕒 Estimare sosire – calcularea timpului estimat pentru sosirea trenurilor
+RailSync is a server-side application that provides registered clients with real-time information about:
 
-Scopul proiectului este de a oferi o soluție eficientă și rapidă pentru gestionarea și monitorizarea mersului trenurilor folosind o arhitectură robustă bazată pe rețele TCP și o bază de date locală.
+* 🚆 **Train schedules** – up-to-date timetables for all available trains
+* 🚉 **Departure and arrival status** – real-time notifications for station departures and arrivals
+* ⏳ **Delays** – real-time reporting and updates of train delays
+* 🕒 **Arrival estimates** – calculation of estimated arrival times for trains
 
-## Tehnologii Utilizate
-- Limbaj: C/C++ – pentru performanță și control direct asupra resurselor
-- Sockets TCP: pentru comunicarea între client și server
-- SQLite: pentru stocarea și gestionarea datelor despre trenuri, status și utilizatori
-- Threads: pentru gestionarea conexiunilor multiple și procesarea în paralel
+The goal of the project is to offer an efficient and fast solution for managing and monitoring train schedules using a robust architecture based on TCP networks and a local database.
 
-## Idee
-Aplicația a început ca un proiect pentru cursul de Rețele de Calculatoare, unde scopul inițial era să implementez un server TCP pentru gestionarea conexiunilor și schimbul de date între client și server, urmând ca ulterior să adaug noi funcționalități și îmbunătățiri.
+## Technologies Used
+
+* **Language:** C/C++ – for performance and low-level resource control
+* **TCP Sockets:** for communication between client and server
+* **SQLite:** for storing and managing data about trains, status, and users
+* **Threads:** for handling multiple connections and parallel processing
+
+## Idea
+
+The application started as a project for the **Computer Networks** course, with the initial goal of implementing a TCP server to manage connections and data exchange between the client and server. Over time, new features and improvements were added.
+
+## Database Files
+
+`mydb.db` and `client.db` are created locally through SQL scripts.
+
+> **Note:** The code will **not compile** without the database files.

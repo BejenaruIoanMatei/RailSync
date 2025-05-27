@@ -1,3 +1,7 @@
+// HOW TO COMPILE THIS
+//      g++ -std=c++11 client.cpp -o client -lsqlite3 -pthread
+
+
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
